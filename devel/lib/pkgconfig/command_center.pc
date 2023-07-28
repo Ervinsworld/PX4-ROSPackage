@@ -1,0 +1,8 @@
+prefix=/home/ervin/drone_ws/devel
+
+Name: command_center
+Description: Description of command_center
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
