@@ -1,0 +1,8 @@
+prefix=/home/ervin/drone_ws/devel
+
+Name: vision_missions
+Description: Description of vision_missions
+Version: 0.0.0
+Cflags: -I/home/ervin/drone_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: cv_bridge roscpp rospy sensor_msgs std_msgs message_runtime

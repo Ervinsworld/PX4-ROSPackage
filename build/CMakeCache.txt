@@ -109,7 +109,7 @@ CATKIN_SKIP_TESTING:BOOL=OFF
 CATKIN_SYMLINK_INSTALL:BOOL=OFF
 
 //List of ';' separated packages to build
-CATKIN_WHITELIST_PACKAGES:STRING=command_center
+CATKIN_WHITELIST_PACKAGES:STRING=vision_missions
 
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
@@ -971,6 +971,12 @@ trajectory_msgs_DIR:PATH=/opt/ros/melodic/share/trajectory_msgs/cmake
 
 //The directory containing a CMake configuration file for uuid_msgs.
 uuid_msgs_DIR:PATH=/opt/ros/melodic/share/uuid_msgs/cmake
+
+//Value Computed by CMake
+vision_missions_BINARY_DIR:STATIC=/home/ervin/drone_ws/build/vision_missions
+
+//Value Computed by CMake
+vision_missions_SOURCE_DIR:STATIC=/home/ervin/drone_ws/src/vision_missions
 
 //The directory containing a CMake configuration file for visualization_msgs.
 visualization_msgs_DIR:PATH=/opt/ros/melodic/share/visualization_msgs/cmake
