@@ -16,8 +16,8 @@ import time
 from simple_pid import PID
 from vision_missions.msg import center
 
-x_pid = PID(0.04, 0, 0, setpoint=0) 
-y_pid = PID(0.04, 0, 0, setpoint=0)
+x_pid = PID(0, 0, 0, setpoint=0) 
+y_pid = PID(0.5, 0, 0, setpoint=0)
 
 class ApronDetection():
     def __init__(self):

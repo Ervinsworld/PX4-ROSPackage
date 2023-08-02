@@ -7,6 +7,7 @@
 #include <mavros_msgs/State.h>
 #include <nav_msgs/Odometry.h>
 #include <mavros_msgs/PositionTarget.h>
+#include "vision_missions/center.h"
 
 mavros_msgs::State current_state;
 void state_cb(const mavros_msgs::State::ConstPtr& msg){
@@ -21,7 +22,18 @@ void odom_cb(const nav_msgs::Odometry::ConstPtr& Odom){
     cur_x = current_Odom.pose.pose.position.x;
     cur_y = current_Odom.pose.pose.position.y;
     cur_z = current_Odom.pose.pose.position.z;
-    ROS_INFO_STREAM("odom INFO x:"<<cur_x<<"  y:"<<cur_y<<"  z:"<<cur_z);
+    //ROS_INFO_STREAM("odom INFO x:"<<cur_x<<"  y:"<<cur_y<<"  z:"<<cur_z);
+}
+
+vision_missions::center current_center;
+double x_dif, y_dif, cen_value;
+
+void center_cb(const vision_missions::center::ConstPtr& center){
+    current_center = *center;
+    x_dif = current_center.x/500;
+    y_dif = current_center.y/500;
+    cen_value = current_center.value;
+    ROS_INFO_STREAM("center INFO x:"<<x_dif<<"  y:"<<y_dif<<"  value:"<<cen_value);
 }
 
 //用来判断理想值和实际值是否符合range
@@ -42,6 +54,9 @@ int main(int argc, char **argv)
 
     ros::Subscriber odom_sub = nh.subscribe<nav_msgs::Odometry>
             ("mavros/local_position/odom", 10, odom_cb);
+
+    ros::Subscriber center_sub = nh.subscribe<vision_missions::center>
+            ("/center_diff", 10, center_cb);
 
     ros::Publisher local_pos_pub = nh.advertise<mavros_msgs::PositionTarget>
             ("mavros/setpoint_raw/local", 10);
@@ -104,13 +119,39 @@ int main(int argc, char **argv)
         if(pose_match(1.5, cur_z, 0.05)){
             PoseCommand.type_mask = 0b101111011100;
             //PoseCommand.position.z = 0;
-            PoseCommand.velocity.z = -(cur_z/5);
+            PoseCommand.velocity.z = -0.1;
+            PoseCommand.yaw = 0;
             land_flag = true;
         }
 
+        //降落到0.8米高度处开始pid校准
         if(land_flag){
-            if(pose_match(0, cur_z, 0.4)){
-                PoseCommand.velocity.z = 0;
+            if(pose_match(0.8, cur_z, 0.05)){   
+                //进入pid循环
+                ros::Time pid_time = ros::Time::now();
+                PoseCommand.type_mask = 0b101111100011;
+                PoseCommand.position.z = 0.8;
+                PoseCommand.yaw = 0;
+                do{
+                    local_pos_pub.publish(PoseCommand);
+                    PoseCommand.velocity.x = y_dif;
+                    PoseCommand.velocity.y = x_dif;
+                    ros::spinOnce();
+                    rate.sleep();
+                }while(ros::Time::now()-pid_time < ros::Duration(10.0));
+                //pid调整成功，进入降落稳定模式
+                ros::Time pid_end = ros::Time::now();
+                PoseCommand.type_mask = 0b101111011100;
+                PoseCommand.position.x = cur_x;
+                PoseCommand.position.y = cur_y;
+                PoseCommand.velocity.z = -0.3;
+                PoseCommand.yaw = 0;
+                do{
+                    local_pos_pub.publish(PoseCommand);
+                    ros::spinOnce();
+                    rate.sleep();
+                }while(ros::Time::now()-pid_end < ros::Duration(3.0));
+                PoseCommand.type_mask = 0b111111111111;
                 do{
                     arming_client.call(disarm_cmd);
                     ros::spinOnce();

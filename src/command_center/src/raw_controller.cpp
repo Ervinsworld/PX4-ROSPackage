@@ -69,7 +69,7 @@ int main(int argc, char **argv)
     PoseCommand.type_mask = 0b101111111000;
     PoseCommand.position.x = 0;
     PoseCommand.position.y = 0;
-    PoseCommand.position.z = 1.5;
+    PoseCommand.position.z = 1;
     PoseCommand.yaw = 0;
 
     //send a few setpoints before starting
@@ -100,13 +100,13 @@ int main(int argc, char **argv)
         }
 
         local_pos_pub.publish(PoseCommand);
-        if(pose_match(1.5, cur_z, 0.05)){
-            PoseCommand.coordinate_frame = 8;
-            PoseCommand.type_mask = 0b011111000111;
+        if(pose_match(1, cur_z, 0.05)){
+            //PoseCommand.coordinate_frame = 8;
+            PoseCommand.type_mask = 0b101111100011;
             PoseCommand.velocity.x = 0;
-            PoseCommand.velocity.y = 0.1;
             PoseCommand.velocity.y = 0;
-            PoseCommand.yaw_rate = PI/24;
+            PoseCommand.position.z = 1;
+            PoseCommand.yaw=0;
         }
         ros::spinOnce();
         rate.sleep();
@@ -114,4 +114,3 @@ int main(int argc, char **argv)
 
     return 0;
 }
-

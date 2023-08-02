@@ -90,6 +90,10 @@ line_tracker_EXTERNAL_OBJECTS =
 
 /home/ervin/drone_ws/devel/lib/command_center/line_tracker: command_center/CMakeFiles/line_tracker.dir/src/line_tracker.cpp.o
 /home/ervin/drone_ws/devel/lib/command_center/line_tracker: command_center/CMakeFiles/line_tracker.dir/build.make
+/home/ervin/drone_ws/devel/lib/command_center/line_tracker: /opt/ros/melodic/lib/libcv_bridge.so
+/home/ervin/drone_ws/devel/lib/command_center/line_tracker: /usr/lib/aarch64-linux-gnu/libopencv_core.so.3.2.0
+/home/ervin/drone_ws/devel/lib/command_center/line_tracker: /usr/lib/aarch64-linux-gnu/libopencv_imgproc.so.3.2.0
+/home/ervin/drone_ws/devel/lib/command_center/line_tracker: /usr/lib/aarch64-linux-gnu/libopencv_imgcodecs.so.3.2.0
 /home/ervin/drone_ws/devel/lib/command_center/line_tracker: /opt/ros/melodic/lib/libroscpp.so
 /home/ervin/drone_ws/devel/lib/command_center/line_tracker: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so
 /home/ervin/drone_ws/devel/lib/command_center/line_tracker: /opt/ros/melodic/lib/librosconsole.so

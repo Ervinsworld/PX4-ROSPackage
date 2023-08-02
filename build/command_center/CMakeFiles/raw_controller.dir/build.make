@@ -90,6 +90,10 @@ raw_controller_EXTERNAL_OBJECTS =
 
 /home/ervin/drone_ws/devel/lib/command_center/raw_controller: command_center/CMakeFiles/raw_controller.dir/src/raw_controller.cpp.o
 /home/ervin/drone_ws/devel/lib/command_center/raw_controller: command_center/CMakeFiles/raw_controller.dir/build.make
+/home/ervin/drone_ws/devel/lib/command_center/raw_controller: /opt/ros/melodic/lib/libcv_bridge.so
+/home/ervin/drone_ws/devel/lib/command_center/raw_controller: /usr/lib/aarch64-linux-gnu/libopencv_core.so.3.2.0
+/home/ervin/drone_ws/devel/lib/command_center/raw_controller: /usr/lib/aarch64-linux-gnu/libopencv_imgproc.so.3.2.0
+/home/ervin/drone_ws/devel/lib/command_center/raw_controller: /usr/lib/aarch64-linux-gnu/libopencv_imgcodecs.so.3.2.0
 /home/ervin/drone_ws/devel/lib/command_center/raw_controller: /opt/ros/melodic/lib/libroscpp.so
 /home/ervin/drone_ws/devel/lib/command_center/raw_controller: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so
 /home/ervin/drone_ws/devel/lib/command_center/raw_controller: /opt/ros/melodic/lib/librosconsole.so

@@ -1,0 +1,8 @@
+prefix=/home/ervin/drone_ws/devel
+
+Name: missions
+Description: Description of missions
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

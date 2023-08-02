@@ -109,7 +109,7 @@ CATKIN_SKIP_TESTING:BOOL=OFF
 CATKIN_SYMLINK_INSTALL:BOOL=OFF
 
 //List of ';' separated packages to build
-CATKIN_WHITELIST_PACKAGES:STRING=vision_missions
+CATKIN_WHITELIST_PACKAGES:STRING=command_center
 
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
@@ -808,7 +808,7 @@ jetson_nano_csi_cam_BINARY_DIR:STATIC=/home/ervin/drone_ws/build/jetson_nano_csi
 jetson_nano_csi_cam_SOURCE_DIR:STATIC=/home/ervin/drone_ws/src/jetson_nano_csi_cam_ros
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/melodic/lib/libxmlrpcpp.so
+lib:FILEPATH=/opt/ros/melodic/lib/libcv_bridge.so
 
 //The directory containing a CMake configuration file for libmavconn.
 libmavconn_DIR:PATH=/opt/ros/melodic/share/libmavconn/cmake
@@ -833,6 +833,12 @@ message_generation_DIR:PATH=/opt/ros/melodic/share/message_generation/cmake
 
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/melodic/share/message_runtime/cmake
+
+//Value Computed by CMake
+missions_BINARY_DIR:STATIC=/home/ervin/drone_ws/build/missions
+
+//Value Computed by CMake
+missions_SOURCE_DIR:STATIC=/home/ervin/drone_ws/src/missions
 
 //The directory containing a CMake configuration file for nav_msgs.
 nav_msgs_DIR:PATH=/opt/ros/melodic/share/nav_msgs/cmake
@@ -974,6 +980,9 @@ uuid_msgs_DIR:PATH=/opt/ros/melodic/share/uuid_msgs/cmake
 
 //Value Computed by CMake
 vision_missions_BINARY_DIR:STATIC=/home/ervin/drone_ws/build/vision_missions
+
+//The directory containing a CMake configuration file for vision_missions.
+vision_missions_DIR:PATH=/home/ervin/drone_ws/devel/share/vision_missions/cmake
 
 //Value Computed by CMake
 vision_missions_SOURCE_DIR:STATIC=/home/ervin/drone_ws/src/vision_missions

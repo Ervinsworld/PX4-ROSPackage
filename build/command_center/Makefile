@@ -187,6 +187,36 @@ vel_controller/fast:
 .PHONY : vel_controller/fast
 
 # Convenience name for target.
+command_center/CMakeFiles/vision_missions_generate_messages_py.dir/rule:
+	cd /home/ervin/drone_ws/build && $(MAKE) -f CMakeFiles/Makefile2 command_center/CMakeFiles/vision_missions_generate_messages_py.dir/rule
+.PHONY : command_center/CMakeFiles/vision_missions_generate_messages_py.dir/rule
+
+# Convenience name for target.
+vision_missions_generate_messages_py: command_center/CMakeFiles/vision_missions_generate_messages_py.dir/rule
+
+.PHONY : vision_missions_generate_messages_py
+
+# fast build rule for target.
+vision_missions_generate_messages_py/fast:
+	cd /home/ervin/drone_ws/build && $(MAKE) -f command_center/CMakeFiles/vision_missions_generate_messages_py.dir/build.make command_center/CMakeFiles/vision_missions_generate_messages_py.dir/build
+.PHONY : vision_missions_generate_messages_py/fast
+
+# Convenience name for target.
+command_center/CMakeFiles/vision_missions_generate_messages_nodejs.dir/rule:
+	cd /home/ervin/drone_ws/build && $(MAKE) -f CMakeFiles/Makefile2 command_center/CMakeFiles/vision_missions_generate_messages_nodejs.dir/rule
+.PHONY : command_center/CMakeFiles/vision_missions_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+vision_missions_generate_messages_nodejs: command_center/CMakeFiles/vision_missions_generate_messages_nodejs.dir/rule
+
+.PHONY : vision_missions_generate_messages_nodejs
+
+# fast build rule for target.
+vision_missions_generate_messages_nodejs/fast:
+	cd /home/ervin/drone_ws/build && $(MAKE) -f command_center/CMakeFiles/vision_missions_generate_messages_nodejs.dir/build.make command_center/CMakeFiles/vision_missions_generate_messages_nodejs.dir/build
+.PHONY : vision_missions_generate_messages_nodejs/fast
+
+# Convenience name for target.
 command_center/CMakeFiles/position_planner.dir/rule:
 	cd /home/ervin/drone_ws/build && $(MAKE) -f CMakeFiles/Makefile2 command_center/CMakeFiles/position_planner.dir/rule
 .PHONY : command_center/CMakeFiles/position_planner.dir/rule
@@ -200,6 +230,21 @@ position_planner: command_center/CMakeFiles/position_planner.dir/rule
 position_planner/fast:
 	cd /home/ervin/drone_ws/build && $(MAKE) -f command_center/CMakeFiles/position_planner.dir/build.make command_center/CMakeFiles/position_planner.dir/build
 .PHONY : position_planner/fast
+
+# Convenience name for target.
+command_center/CMakeFiles/vision_missions_generate_messages_lisp.dir/rule:
+	cd /home/ervin/drone_ws/build && $(MAKE) -f CMakeFiles/Makefile2 command_center/CMakeFiles/vision_missions_generate_messages_lisp.dir/rule
+.PHONY : command_center/CMakeFiles/vision_missions_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+vision_missions_generate_messages_lisp: command_center/CMakeFiles/vision_missions_generate_messages_lisp.dir/rule
+
+.PHONY : vision_missions_generate_messages_lisp
+
+# fast build rule for target.
+vision_missions_generate_messages_lisp/fast:
+	cd /home/ervin/drone_ws/build && $(MAKE) -f command_center/CMakeFiles/vision_missions_generate_messages_lisp.dir/build.make command_center/CMakeFiles/vision_missions_generate_messages_lisp.dir/build
+.PHONY : vision_missions_generate_messages_lisp/fast
 
 # Convenience name for target.
 command_center/CMakeFiles/openmv_transport_generate_messages_lisp.dir/rule:
@@ -367,6 +412,21 @@ rosgraph_msgs_generate_messages_py/fast:
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 # Convenience name for target.
+command_center/CMakeFiles/vision_missions_generate_messages_cpp.dir/rule:
+	cd /home/ervin/drone_ws/build && $(MAKE) -f CMakeFiles/Makefile2 command_center/CMakeFiles/vision_missions_generate_messages_cpp.dir/rule
+.PHONY : command_center/CMakeFiles/vision_missions_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+vision_missions_generate_messages_cpp: command_center/CMakeFiles/vision_missions_generate_messages_cpp.dir/rule
+
+.PHONY : vision_missions_generate_messages_cpp
+
+# fast build rule for target.
+vision_missions_generate_messages_cpp/fast:
+	cd /home/ervin/drone_ws/build && $(MAKE) -f command_center/CMakeFiles/vision_missions_generate_messages_cpp.dir/build.make command_center/CMakeFiles/vision_missions_generate_messages_cpp.dir/build
+.PHONY : vision_missions_generate_messages_cpp/fast
+
+# Convenience name for target.
 command_center/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
 	cd /home/ervin/drone_ws/build && $(MAKE) -f CMakeFiles/Makefile2 command_center/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 .PHONY : command_center/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
@@ -425,6 +485,21 @@ line_tracker: command_center/CMakeFiles/line_tracker.dir/rule
 line_tracker/fast:
 	cd /home/ervin/drone_ws/build && $(MAKE) -f command_center/CMakeFiles/line_tracker.dir/build.make command_center/CMakeFiles/line_tracker.dir/build
 .PHONY : line_tracker/fast
+
+# Convenience name for target.
+command_center/CMakeFiles/vision_missions_generate_messages_eus.dir/rule:
+	cd /home/ervin/drone_ws/build && $(MAKE) -f CMakeFiles/Makefile2 command_center/CMakeFiles/vision_missions_generate_messages_eus.dir/rule
+.PHONY : command_center/CMakeFiles/vision_missions_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+vision_missions_generate_messages_eus: command_center/CMakeFiles/vision_missions_generate_messages_eus.dir/rule
+
+.PHONY : vision_missions_generate_messages_eus
+
+# fast build rule for target.
+vision_missions_generate_messages_eus/fast:
+	cd /home/ervin/drone_ws/build && $(MAKE) -f command_center/CMakeFiles/vision_missions_generate_messages_eus.dir/build.make command_center/CMakeFiles/vision_missions_generate_messages_eus.dir/build
+.PHONY : vision_missions_generate_messages_eus/fast
 
 # Convenience name for target.
 command_center/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/rule:
@@ -937,6 +1012,21 @@ geographic_msgs_generate_messages_py/fast:
 .PHONY : geographic_msgs_generate_messages_py/fast
 
 # Convenience name for target.
+command_center/CMakeFiles/drone_mission.dir/rule:
+	cd /home/ervin/drone_ws/build && $(MAKE) -f CMakeFiles/Makefile2 command_center/CMakeFiles/drone_mission.dir/rule
+.PHONY : command_center/CMakeFiles/drone_mission.dir/rule
+
+# Convenience name for target.
+drone_mission: command_center/CMakeFiles/drone_mission.dir/rule
+
+.PHONY : drone_mission
+
+# fast build rule for target.
+drone_mission/fast:
+	cd /home/ervin/drone_ws/build && $(MAKE) -f command_center/CMakeFiles/drone_mission.dir/build.make command_center/CMakeFiles/drone_mission.dir/build
+.PHONY : drone_mission/fast
+
+# Convenience name for target.
 command_center/CMakeFiles/raw_controller.dir/rule:
 	cd /home/ervin/drone_ws/build && $(MAKE) -f CMakeFiles/Makefile2 command_center/CMakeFiles/raw_controller.dir/rule
 .PHONY : command_center/CMakeFiles/raw_controller.dir/rule
@@ -1070,6 +1160,33 @@ roscpp_generate_messages_cpp: command_center/CMakeFiles/roscpp_generate_messages
 roscpp_generate_messages_cpp/fast:
 	cd /home/ervin/drone_ws/build && $(MAKE) -f command_center/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make command_center/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
+
+src/drone_mission.o: src/drone_mission.cpp.o
+
+.PHONY : src/drone_mission.o
+
+# target to build an object file
+src/drone_mission.cpp.o:
+	cd /home/ervin/drone_ws/build && $(MAKE) -f command_center/CMakeFiles/drone_mission.dir/build.make command_center/CMakeFiles/drone_mission.dir/src/drone_mission.cpp.o
+.PHONY : src/drone_mission.cpp.o
+
+src/drone_mission.i: src/drone_mission.cpp.i
+
+.PHONY : src/drone_mission.i
+
+# target to preprocess a source file
+src/drone_mission.cpp.i:
+	cd /home/ervin/drone_ws/build && $(MAKE) -f command_center/CMakeFiles/drone_mission.dir/build.make command_center/CMakeFiles/drone_mission.dir/src/drone_mission.cpp.i
+.PHONY : src/drone_mission.cpp.i
+
+src/drone_mission.s: src/drone_mission.cpp.s
+
+.PHONY : src/drone_mission.s
+
+# target to generate assembly for a file
+src/drone_mission.cpp.s:
+	cd /home/ervin/drone_ws/build && $(MAKE) -f command_center/CMakeFiles/drone_mission.dir/build.make command_center/CMakeFiles/drone_mission.dir/src/drone_mission.cpp.s
+.PHONY : src/drone_mission.cpp.s
 
 src/land_tester.o: src/land_tester.cpp.o
 
@@ -1243,7 +1360,10 @@ help:
 	@echo "... list_install_components"
 	@echo "... land_tester"
 	@echo "... vel_controller"
+	@echo "... vision_missions_generate_messages_py"
+	@echo "... vision_missions_generate_messages_nodejs"
 	@echo "... position_planner"
+	@echo "... vision_missions_generate_messages_lisp"
 	@echo "... openmv_transport_generate_messages_lisp"
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_nodejs"
@@ -1257,10 +1377,12 @@ help:
 	@echo "... nav_msgs_generate_messages_lisp"
 	@echo "... nav_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... vision_missions_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... mavros_msgs_generate_messages_py"
 	@echo "... line_tracker"
+	@echo "... vision_missions_generate_messages_eus"
 	@echo "... mavros_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_nodejs"
@@ -1295,6 +1417,7 @@ help:
 	@echo "... offb_node"
 	@echo "... uuid_msgs_generate_messages_eus"
 	@echo "... geographic_msgs_generate_messages_py"
+	@echo "... drone_mission"
 	@echo "... raw_controller"
 	@echo "... mavros_msgs_generate_messages_lisp"
 	@echo "... uuid_msgs_generate_messages_py"
@@ -1306,6 +1429,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_cpp"
+	@echo "... src/drone_mission.o"
+	@echo "... src/drone_mission.i"
+	@echo "... src/drone_mission.s"
 	@echo "... src/land_tester.o"
 	@echo "... src/land_tester.i"
 	@echo "... src/land_tester.s"

@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+/home/ervin/drone_ws/devel/include/vision_missions/center.h
+string
+-
+vector
+-
+memory
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
 /home/ervin/drone_ws/src/command_center/src/land_tester.cpp
 ros/ros.h
 -
@@ -21,6 +37,8 @@ nav_msgs/Odometry.h
 -
 mavros_msgs/PositionTarget.h
 -
+vision_missions/center.h
+/home/ervin/drone_ws/src/command_center/src/vision_missions/center.h
 
 /opt/ros/melodic/include/geometry_msgs/Point.h
 string

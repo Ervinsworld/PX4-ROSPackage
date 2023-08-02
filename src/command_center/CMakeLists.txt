@@ -17,6 +17,7 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
   openmv_transport
   sensor_msgs
+  vision_missions
 )
 
 ## System dependencies are found with CMake's conventions
@@ -183,6 +184,9 @@ add_executable(land_tester src/land_tester.cpp)
 
 add_executable(line_tracker src/line_tracker.cpp)
 target_link_libraries(line_tracker ${catkin_LIBRARIES})
+
+add_executable(drone_mission src/drone_mission.cpp)
+target_link_libraries(drone_mission ${catkin_LIBRARIES})
 #add_dependencies(line_tracker ${PROJECT_NAME}_generate_messages_cpp)
 
 #############

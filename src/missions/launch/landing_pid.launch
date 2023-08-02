@@ -1,0 +1,7 @@
+<launch>
+    <include file="$(find px4_realsense_bridge)/launch/bridge_mavros.launch" />
+    <include file="$(find jetson_nano_csi_cam)/launch/jetson_csi_cam.launch" />
+
+    <node pkg="vision_missions" type="findAporn.py" name="findAporn" output="log" />
+    <node pkg="command_center" type="land_tester" name="land" output="screen" />
+</launch>

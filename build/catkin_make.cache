@@ -1,2 +1,2 @@
-VIO:command_center:ddynamic_reconfigure:gscam:jetson_nano_csi_cam_ros:openmv_transport:realsense-ros/realsense2_camera:realsense-ros/realsense2_description:vision_missions
+VIO:command_center:ddynamic_reconfigure:gscam:jetson_nano_csi_cam_ros:missions:openmv_transport:realsense-ros/realsense2_camera:realsense-ros/realsense2_description:vision_missions
 -DCATKIN_DEVEL_PREFIX=/home/ervin/drone_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ervin/drone_ws/install -G Unix Makefiles

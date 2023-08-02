@@ -90,6 +90,10 @@ offb_node_EXTERNAL_OBJECTS =
 
 /home/ervin/drone_ws/devel/lib/command_center/offb_node: command_center/CMakeFiles/offb_node.dir/src/offb_node.cpp.o
 /home/ervin/drone_ws/devel/lib/command_center/offb_node: command_center/CMakeFiles/offb_node.dir/build.make
+/home/ervin/drone_ws/devel/lib/command_center/offb_node: /opt/ros/melodic/lib/libcv_bridge.so
+/home/ervin/drone_ws/devel/lib/command_center/offb_node: /usr/lib/aarch64-linux-gnu/libopencv_core.so.3.2.0
+/home/ervin/drone_ws/devel/lib/command_center/offb_node: /usr/lib/aarch64-linux-gnu/libopencv_imgproc.so.3.2.0
+/home/ervin/drone_ws/devel/lib/command_center/offb_node: /usr/lib/aarch64-linux-gnu/libopencv_imgcodecs.so.3.2.0
 /home/ervin/drone_ws/devel/lib/command_center/offb_node: /opt/ros/melodic/lib/libroscpp.so
 /home/ervin/drone_ws/devel/lib/command_center/offb_node: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so
 /home/ervin/drone_ws/devel/lib/command_center/offb_node: /opt/ros/melodic/lib/librosconsole.so
