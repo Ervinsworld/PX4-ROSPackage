@@ -117,10 +117,22 @@ int main(int argc, char **argv)
     Flight_list[flightPoint_num-1][1] = start_y;
     Flight_list[flightPoint_num-1][2] = TRAVEL_H;
     for(int i=0; i<flightPoint_num-2; i++){
-        Flight_list[i+1][0] = start_x + (Flight_point[i][1]-1)*0.8 + 0.05;
-        Flight_list[i+1][1] = start_y - (Flight_point[i][0]-1)*0.8 - 0.05;
+        Flight_list[i+1][0] = start_x + (Flight_point[i][1]-1)*0.75 + 0.05;
+        Flight_list[i+1][1] = start_y - (Flight_point[i][0]-1)*0.75 - 0.05;
         Flight_list[i+1][2] = TRAVEL_H;
     }
+
+    // Flight_list[0][0] = start_x;
+    // Flight_list[0][1] = start_y;
+    // Flight_list[0][2] = TRAVEL_H;
+    // Flight_list[flightPoint_num-1][0] = start_x;
+    // Flight_list[flightPoint_num-1][1] = start_y;
+    // Flight_list[flightPoint_num-1][2] = TRAVEL_H;
+    // for(int i=0; i<flightPoint_num-2; i++){
+    //     Flight_list[i+1][0] = start_x + (Flight_point[i][1]-1)*0.8;
+    //     Flight_list[i+1][1] = start_y - (Flight_point[i][0]-1)*0.8;
+    //     Flight_list[i+1][2] = TRAVEL_H;
+    // }
 
     //输出Flight_list的实际参数用来调试
     for(int i=0; i<flightPoint_num; i++){

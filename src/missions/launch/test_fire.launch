@@ -1,0 +1,6 @@
+<launch>
+    <include file="$(find px4_realsense_bridge)/launch/bridge_mavros.launch" />
+    <include file="$(find jetson_nano_csi_cam)/launch/jetson_csi_cam.launch" />
+    <node pkg="vision_missions" type="findFire.py" name="findFire.py" output="screen" />
+    <node pkg="command_center" type="drone_mission" name="drone_mission" output="screen" />
+</launch>
