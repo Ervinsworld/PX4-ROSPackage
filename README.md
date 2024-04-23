@@ -7,7 +7,7 @@
 ### 2.目录结构
 - src/command-center: 起飞、降落、航点规划和运动控制package
 - src/openmv_transport: openmv和jetson nano的串口通讯包（预备方案，以防jetson nano算力不足）
-- src/vision_mission: 使用jetson nano的csi摄像头, 基于opencv库对火点，起飞降落点进行识别的包
+- src/vision_mission: 使用jetson nano的csi摄像头, 基于opencv库对火点，起飞降落点进行识别package
 - src/missions: launch file目录
   
 ### 3.失误总结：
