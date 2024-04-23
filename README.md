@@ -1,6 +1,5 @@
 # 2023年电赛无人机ROS_Package
 ![image](https://github.com/Ervinsworld/PX4-ROSPackage/blob/master/pic.jpg)
-> 飞行视频：[视频](https://www.bilibili.com/video/BV1Cj411B762/?spm_id_from=333.999.0.0&vd_source=63b77a3cb11fa22eb55ce223594a91b7)
 ### 1.技术方案：
  - 硬件方案：pixhawk + jetson nano + realsense_T265
  - 软件方案：ROS + mavros
